@@ -7,12 +7,11 @@ function Book(name, author,pages, status) {
   this.id = crypto.randomUUID();
   this.name = name;
   this. author =  author;
-  this.pages = pages;
+  this.pages = pages;   
   this.status = status;
 }
 
 function addBookToLibrary(name, author,pages, status) {
-  // take params, create a book then store it in the array
     let book = new Book(name, author,pages, status);
     myLibrary.push(book);
 }
